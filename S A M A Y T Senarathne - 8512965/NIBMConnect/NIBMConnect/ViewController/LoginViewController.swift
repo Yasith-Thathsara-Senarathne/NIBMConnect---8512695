@@ -12,6 +12,7 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController , GIDSignInDelegate, GIDSignInUIDelegate {
 
+    @IBOutlet weak var signUpBtn: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,10 +31,21 @@ class LoginViewController: UIViewController , GIDSignInDelegate, GIDSignInUIDele
         let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication.accessToken)!)
         // When user is signed in
         Auth.auth().signIn(with: credential, completion: { (user, error) in
-            if let error = error {
+            if let error = error
+            {
+                //Popup alert
                 print("Login error: \(error.localizedDescription)")
+                let alert = UIAlertController(title: "Sign In Error !", message:error.localizedDescription, preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                
+                self.present(alert, animated: true)
                 return
             }
+            
+            //perfome Sague
+            
+            
         })
     }
 
