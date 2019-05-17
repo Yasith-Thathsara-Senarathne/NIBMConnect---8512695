@@ -137,11 +137,11 @@
 		F4B6D203228E3B9500F7655F /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
+				F4F40F1F228EAFAA0074FB67 /* Storyboard */,
+				F4F40F1E228EAF9B0074FB67 /* ViewController */,
+				F4F40F1D228EAF610074FB67 /* Model */,
 				F4B6D204228E3B9500F7655F /* AppDelegate.swift */,
-				F4B6D206228E3B9500F7655F /* ViewController.swift */,
-				F4B6D208228E3B9500F7655F /* Main.storyboard */,
 				F4B6D20B228E3BCD00F7655F /* Assets.xcassets */,
-				F4B6D20D228E3BCD00F7655F /* LaunchScreen.storyboard */,
 				F4B6D210228E3BCD00F7655F /* Info.plist */,
 			);
 			path = NIBMConnect;
@@ -163,6 +163,30 @@
 				F4B6D226228E3BCE00F7655F /* Info.plist */,
 			);
 			path = NIBMConnectUITests;
+			sourceTree = "<group>";
+		};
+		F4F40F1D228EAF610074FB67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4F40F1E228EAF9B0074FB67 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6D206228E3B9500F7655F /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F4F40F1F228EAFAA0074FB67 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6D208228E3B9500F7655F /* Main.storyboard */,
+				F4B6D20D228E3BCD00F7655F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
