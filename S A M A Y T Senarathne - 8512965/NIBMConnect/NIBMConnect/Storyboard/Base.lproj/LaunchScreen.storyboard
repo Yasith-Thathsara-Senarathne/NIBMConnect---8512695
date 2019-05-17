@@ -18,25 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="National_Institute_of_Business_Management_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="TjP-dj-4C4">
-                                <rect key="frame" x="0.0" y="32" width="375" height="135"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBMConnect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayd-eh-Kxb">
-                                <rect key="frame" x="57" y="204" width="260" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NIBMConnect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayd-eh-Kxb">
+                                <rect key="frame" x="57" y="202" width="260" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G30-rc-m9v">
+                                <rect key="frame" x="122" y="159" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="National_Institute_of_Business_Management_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="TjP-dj-4C4">
+                                <rect key="frame" x="0.0" y="32" width="375" height="100"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.61245253180000003" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TjP-dj-4C4" secondAttribute="bottom" constant="500" id="6k5-db-1J2"/>
-                            <constraint firstItem="TjP-dj-4C4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DXO-zX-JZE"/>
+                            <constraint firstItem="Ayd-eh-Kxb" firstAttribute="top" secondItem="G30-rc-m9v" secondAttribute="bottom" constant="13" id="2dT-YQ-agy"/>
+                            <constraint firstItem="G30-rc-m9v" firstAttribute="top" secondItem="TjP-dj-4C4" secondAttribute="bottom" constant="27" id="4Ls-Kv-6hM"/>
+                            <constraint firstItem="G30-rc-m9v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="Jwo-2r-8Qu"/>
+                            <constraint firstItem="TjP-dj-4C4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="PGi-va-nZ8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ayd-eh-Kxb" secondAttribute="trailing" constant="58" id="V5w-BM-utc"/>
-                            <constraint firstItem="Ayd-eh-Kxb" firstAttribute="top" secondItem="TjP-dj-4C4" secondAttribute="bottom" constant="37" id="hvP-YC-aWY"/>
+                            <constraint firstItem="TjP-dj-4C4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XJs-M5-vaW"/>
                             <constraint firstItem="Ayd-eh-Kxb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="iPE-iP-Gbp"/>
-                            <constraint firstItem="TjP-dj-4C4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="oSb-5M-Yz8"/>
-                            <constraint firstItem="TjP-dj-4C4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xU1-7G-AZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G30-rc-m9v" secondAttribute="trailing" constant="122" id="qwM-QY-DPo"/>
+                            <constraint firstItem="TjP-dj-4C4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xcW-05-on7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ayd-eh-Kxb" secondAttribute="bottom" constant="417" id="yHe-Dr-Dyi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
