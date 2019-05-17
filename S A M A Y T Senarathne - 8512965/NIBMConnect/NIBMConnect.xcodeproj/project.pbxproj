@@ -17,6 +17,7 @@
 		F4B6D20F228E3BCD00F7655F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B6D20D228E3BCD00F7655F /* LaunchScreen.storyboard */; };
 		F4B6D21A228E3BCE00F7655F /* NIBMConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D219228E3BCE00F7655F /* NIBMConnectTests.swift */; };
 		F4B6D225228E3BCE00F7655F /* NIBMConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D224228E3BCE00F7655F /* NIBMConnectUITests.swift */; };
+		F4F40F21228EB6210074FB67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4F40F20228EB6200074FB67 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F4B6D220228E3BCE00F7655F /* NIBMConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIBMConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B6D224228E3BCE00F7655F /* NIBMConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBMConnectUITests.swift; sourceTree = "<group>"; };
 		F4B6D226228E3BCE00F7655F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F40F20228EB6200074FB67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		F4B6D203228E3B9500F7655F /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
+				F4F40F20228EB6200074FB67 /* GoogleService-Info.plist */,
 				F4F40F1F228EAFAA0074FB67 /* Storyboard */,
 				F4F40F1E228EAF9B0074FB67 /* ViewController */,
 				F4F40F1D228EAF610074FB67 /* Model */,
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B6D20F228E3BCD00F7655F /* LaunchScreen.storyboard in Resources */,
+				F4F40F21228EB6210074FB67 /* GoogleService-Info.plist in Resources */,
 				F4B6D20C228E3BCD00F7655F /* Assets.xcassets in Resources */,
 				F4B6D20A228E3B9500F7655F /* Main.storyboard in Resources */,
 			);
