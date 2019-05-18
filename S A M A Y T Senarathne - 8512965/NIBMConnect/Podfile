@@ -12,6 +12,7 @@ target 'NIBMConnect' do
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'GoogleSignIn'
+    pod 'IQKeyboardManagerSwift', '5.0.0'
 
   target 'NIBMConnectTests' do
     inherit! :search_paths

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "149A48381F99C8A46116D40885C66E15"
+               BlueprintIdentifier = "DE6B651A83BDA3EA4E5602C92DA01209"
                BuildableName = "Pods_NIBMConnect.framework"
                BlueprintName = "Pods-NIBMConnect"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "149A48381F99C8A46116D40885C66E15"
+            BlueprintIdentifier = "DE6B651A83BDA3EA4E5602C92DA01209"
             BuildableName = "Pods_NIBMConnect.framework"
             BlueprintName = "Pods-NIBMConnect"
             ReferencedContainer = "container:Pods.xcodeproj">
