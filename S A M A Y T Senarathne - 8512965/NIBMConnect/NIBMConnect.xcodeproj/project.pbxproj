@@ -11,6 +11,7 @@
 		E3D6440ED2D8F2CBFAC5838D /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550B022CC52C68EF60795110 /* Pods_NIBMConnect.framework */; };
 		EECD3AEB81E013A4C83B25D8 /* Pods_NIBMConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539CBA41A285F31F133AED7A /* Pods_NIBMConnectTests.framework */; };
 		F40A81E2228FEC1E007EE575 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A81E1228FEC1E007EE575 /* SignUpViewController.swift */; };
+		F40A81E422904C6F007EE575 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A81E322904C6F007EE575 /* Home.storyboard */; };
 		F475A990228F407800CD7462 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475A98F228F407800CD7462 /* HomeViewController.swift */; };
 		F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D204228E3B9500F7655F /* AppDelegate.swift */; };
 		F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D206228E3B9500F7655F /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		CCE0BE56699F88019B00FC16 /* Pods-NIBMConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnectUITests/Pods-NIBMConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6815E2CE62E9FCD644023FA /* Pods-NIBMConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnectUITests/Pods-NIBMConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F40A81E1228FEC1E007EE575 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F40A81E322904C6F007EE575 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F475A98F228F407800CD7462 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4B6D201228E3B9500F7655F /* NIBMConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B6D204228E3B9500F7655F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			children = (
 				F4B6D208228E3B9500F7655F /* Main.storyboard */,
 				F4B6D20D228E3BCD00F7655F /* LaunchScreen.storyboard */,
+				F40A81E322904C6F007EE575 /* Home.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B6D20F228E3BCD00F7655F /* LaunchScreen.storyboard in Resources */,
+				F40A81E422904C6F007EE575 /* Home.storyboard in Resources */,
 				F4F40F21228EB6210074FB67 /* GoogleService-Info.plist in Resources */,
 				F4B6D20C228E3BCD00F7655F /* Assets.xcassets in Resources */,
 				F4B6D20A228E3B9500F7655F /* Main.storyboard in Resources */,
@@ -401,6 +405,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -411,6 +416,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

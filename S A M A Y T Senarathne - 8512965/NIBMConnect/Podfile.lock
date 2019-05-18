@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.8.2)
+  - Firebase/Analytics (6.0.0):
+    - Firebase/Core
   - Firebase/Auth (6.0.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.0.0)
@@ -8,6 +10,9 @@ PODS:
     - FirebaseAnalytics (= 6.0.0)
   - Firebase/CoreOnly (6.0.0):
     - FirebaseCore (= 6.0.0)
+  - Firebase/Database (6.0.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.0.0)
   - FirebaseAnalytics (6.0.0):
     - FirebaseCore (~> 6.0)
     - FirebaseInstanceID (~> 4.0)
@@ -27,6 +32,10 @@ PODS:
   - FirebaseCore (6.0.0):
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/Logger (~> 6.0)
+  - FirebaseDatabase (6.0.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (4.0.0):
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
@@ -41,14 +50,14 @@ PODS:
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/DebugUtils (2.2.0):
-    - GoogleToolboxForMac/Defines (= 2.2.0)
-  - GoogleToolboxForMac/Defines (2.2.0)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
-    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
-    - GoogleToolboxForMac/Defines (= 2.2.0)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
+  - GoogleToolboxForMac/DebugUtils (2.2.1):
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+  - GoogleToolboxForMac/Defines (2.2.1)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.1)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.1)
+    - GoogleToolboxForMac/Defines (= 2.2.1)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.1)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.1)"
   - GoogleUtilities/AppDelegateSwizzler (6.1.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -67,8 +76,9 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.1.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher/Core (1.2.1)
+  - GTMSessionFetcher/Core (1.2.2)
   - IQKeyboardManagerSwift (5.0.0)
+  - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -78,8 +88,10 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
   - GoogleSignIn
   - IQKeyboardManagerSwift (= 5.0.0)
   - SwiftyJSON
@@ -92,6 +104,7 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
     - GoogleAppMeasurement
     - GoogleSignIn
@@ -99,6 +112,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
+    - leveldb-library
     - nanopb
     - SwiftyJSON
 
@@ -109,16 +123,18 @@ SPEC CHECKSUMS:
   FirebaseAuth: efc72b0f6fe075d2a6de8d81a6d9de83ef2b47eb
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: e38f025287b413255a53acc1945d048a112047f7
+  FirebaseDatabase: f48e067716864be2b855cf716b927ef375d6cfa0
   FirebaseInstanceID: 0e0348a3c00a734fa376a070f5ad4533ad975cb5
   GoogleAppMeasurement: 7f028ea162b72c8f326daec74afc95d94f7a47d6
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
-  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
-  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 8d9c0a983eb01584b94cacd8334886fc217c7057
+PODFILE CHECKSUM: 33dbb1e3cc23775f1cab49f5b24c9d225d634682
 
 COCOAPODS: 1.6.2

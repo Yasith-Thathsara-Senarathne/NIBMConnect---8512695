@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
     
@@ -21,11 +23,13 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var passwordReTypeTxt: UITextField!
     @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var loadingView: UIView!
+    
+    let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     
@@ -62,6 +66,48 @@ class SignUpViewController: UIViewController {
         else if passwordTxt.text != passwordReTypeTxt.text{
             self.populateAlertBox(title: "Missmatch !", message: "Password & Password Retype missmatch")
             return
+        }
+        else{
+            
+            self.loadingView.alpha = CGFloat(1)
+            
+            let firstName = firstNameTxt.text
+            let lastName = lastNameTxt.text
+            let userName = userNameTxt.text
+            let email = emailTxt.text
+            let password = passwordTxt.text
+            let city = cityTxt.text
+            
+            Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
+                if error != nil{
+                    self.loadingView.alpha = CGFloat(0)
+                    self.populateAlertBox(title: "Signup Error", message: (error?.localizedDescription)!)
+                }
+                guard let uid = user?.user.uid else{
+                    return
+                }
+                
+                let userRef = self.ref.child("myAccount").child(uid)
+                let values = [
+                    "email":email,
+                    "firstname":firstName,
+                    "lastname":lastName,
+                    "username":userName,
+                    "city":city
+                    ]
+                userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
+                    if error != nil{
+                        self.loadingView.alpha = CGFloat(0)
+                        self.populateAlertBox(title: "User Detail Update Error", message: (error?.localizedDescription)!)
+                    }
+                    
+                    self.dismiss(animated: true, completion: nil)
+                    self.loadingView.alpha = CGFloat(0)
+                    let storyboard = UIStoryboard(name: "Home", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
+                    self.present(controller, animated: true, completion: nil)
+                })
+            }
         }
     }
     
