@@ -46,10 +46,20 @@ class LoginViewController: UIViewController {
                     strongSelf.present(alert, animated: true, completion: nil)
                 } else {
                     strongSelf.dismiss(animated: true, completion: nil)
+                    
+                    print(user?.user.uid)
+                    //Adding user data to AppData
+                    AppData.user.uid = (user?.user.uid)!
+                    AppData.user.email = (user?.user.email)!
+                    
+                    //End
+                    
+                    //Open next UI
                     strongSelf.loadingView.alpha = CGFloat(0.0)
                     let storyboard = UIStoryboard(name: "Home", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
+                    let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! TabBarViewController
                     strongSelf.present(controller, animated: true, completion: nil)
+                    //End
                 }
             }
         }

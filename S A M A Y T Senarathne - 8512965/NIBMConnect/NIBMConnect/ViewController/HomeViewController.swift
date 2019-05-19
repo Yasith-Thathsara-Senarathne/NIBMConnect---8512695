@@ -7,30 +7,50 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var friendsTableView: UITableView!
     
-    @IBOutlet weak var profileImage: UIImageView!
+    var friends: [Friend] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.roundImage()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    func roundImage(){
-        profileImage.layer.borderWidth = 1
-        profileImage.layer.masksToBounds = false
-        profileImage.layer.borderColor = UIColor.black.cgColor
-        profileImage.layer.cornerRadius = profileImage.frame.height/2
-        profileImage.clipsToBounds = true
+    func loadFriendsData(){
+        Database.database().reference().child("Friends").observe(.childAdded, with: {(snapshot) in
+        
+            if let dictionary = snapshot.value as? [String:AnyObject]{
+                let firstname = dictionary["firstname"] as! String
+                let lastname = dictionary["lastname"] as! String
+                let profileimageurl = dictionary["profileimage"] as! String
+                let phonenumber = dictionary["phonenumber"] as! Int
+                let fburl = dictionary["fburl"] as! String
+                let city = dictionary["city"] as! String
+                
+                let friend = Friend(firstName: firstname,lastName: lastname,profileImageURL: profileimageurl,phoneNumber: [phonenumber],fbProfileURL: fburl,city: city)
+                self.friends.append(friend)
+            }
+        })
     }
+}
 
+extension HomeViewController:UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friends.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let friend = self.friends[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendListCell") as! FriendTableViewCell
+        
+        return cell
+    }
+    
+    
 }

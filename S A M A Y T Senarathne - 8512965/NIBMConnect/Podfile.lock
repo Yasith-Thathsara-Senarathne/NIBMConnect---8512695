@@ -78,6 +78,7 @@ PODS:
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.2)
   - IQKeyboardManagerSwift (5.0.0)
+  - Kingfisher (5.5.0)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -94,6 +95,7 @@ DEPENDENCIES:
   - Firebase/Database
   - GoogleSignIn
   - IQKeyboardManagerSwift (= 5.0.0)
+  - Kingfisher (~> 5.0)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -112,6 +114,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
+    - Kingfisher
     - leveldb-library
     - nanopb
     - SwiftyJSON
@@ -131,10 +134,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 33dbb1e3cc23775f1cab49f5b24c9d225d634682
+PODFILE CHECKSUM: ce992035b59e71b9a5b1184ccbcaa90b86be9f6a
 
 COCOAPODS: 1.6.2

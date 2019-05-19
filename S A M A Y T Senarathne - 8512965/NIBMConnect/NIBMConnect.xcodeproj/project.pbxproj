@@ -12,6 +12,12 @@
 		EECD3AEB81E013A4C83B25D8 /* Pods_NIBMConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539CBA41A285F31F133AED7A /* Pods_NIBMConnectTests.framework */; };
 		F40A81E2228FEC1E007EE575 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A81E1228FEC1E007EE575 /* SignUpViewController.swift */; };
 		F40A81E422904C6F007EE575 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A81E322904C6F007EE575 /* Home.storyboard */; };
+		F46B95F122913D4000A5937F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F022913D4000A5937F /* TabBarViewController.swift */; };
+		F46B95F322913DD900A5937F /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F222913DD900A5937F /* MyProfileViewController.swift */; };
+		F46B95F522913E4800A5937F /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F422913E4800A5937F /* HomeworkViewController.swift */; };
+		F46B95F72291608800A5937F /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F62291608800A5937F /* FriendTableViewCell.swift */; };
+		F46B95F9229162F200A5937F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F8229162F200A5937F /* Friend.swift */; };
+		F46B95FB22917C9900A5937F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95FA22917C9900A5937F /* AppData.swift */; };
 		F475A990228F407800CD7462 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475A98F228F407800CD7462 /* HomeViewController.swift */; };
 		F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D204228E3B9500F7655F /* AppDelegate.swift */; };
 		F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D206228E3B9500F7655F /* ViewController.swift */; };
@@ -53,6 +59,12 @@
 		D6815E2CE62E9FCD644023FA /* Pods-NIBMConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnectUITests/Pods-NIBMConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F40A81E1228FEC1E007EE575 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F40A81E322904C6F007EE575 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F46B95F022913D4000A5937F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F46B95F222913DD900A5937F /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		F46B95F422913E4800A5937F /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
+		F46B95F62291608800A5937F /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		F46B95F8229162F200A5937F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		F46B95FA22917C9900A5937F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		F475A98F228F407800CD7462 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4B6D201228E3B9500F7655F /* NIBMConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B6D204228E3B9500F7655F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +191,8 @@
 		F4F40F1D228EAF610074FB67 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F46B95F8229162F200A5937F /* Friend.swift */,
+				F46B95FA22917C9900A5937F /* AppData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +204,10 @@
 				F4F40F22228EF2D00074FB67 /* LoginViewController.swift */,
 				F475A98F228F407800CD7462 /* HomeViewController.swift */,
 				F40A81E1228FEC1E007EE575 /* SignUpViewController.swift */,
+				F46B95F022913D4000A5937F /* TabBarViewController.swift */,
+				F46B95F222913DD900A5937F /* MyProfileViewController.swift */,
+				F46B95F422913E4800A5937F /* HomeworkViewController.swift */,
+				F46B95F62291608800A5937F /* FriendTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -404,6 +422,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -415,6 +434,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -449,10 +469,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46B95F72291608800A5937F /* FriendTableViewCell.swift in Sources */,
 				F4F40F23228EF2D00074FB67 /* LoginViewController.swift in Sources */,
 				F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */,
+				F46B95F522913E4800A5937F /* HomeworkViewController.swift in Sources */,
+				F46B95FB22917C9900A5937F /* AppData.swift in Sources */,
+				F46B95F322913DD900A5937F /* MyProfileViewController.swift in Sources */,
 				F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */,
 				F475A990228F407800CD7462 /* HomeViewController.swift in Sources */,
+				F46B95F9229162F200A5937F /* Friend.swift in Sources */,
+				F46B95F122913D4000A5937F /* TabBarViewController.swift in Sources */,
 				F40A81E2228FEC1E007EE575 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
