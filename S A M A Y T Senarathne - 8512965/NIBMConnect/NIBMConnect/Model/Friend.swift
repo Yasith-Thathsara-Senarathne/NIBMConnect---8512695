@@ -14,13 +14,13 @@ class Friend{
     var firstName:String = ""
     var lastName:String = ""
     var profileImageURL:String = ""
-    var phoneNumber:[Int] = []
+    var phoneNumber:[String] = []
     var fbProfileURL:String = ""
     var city:String = ""
     
    
    //Init variables with params
-    init(firstName:String,lastName:String,profileImageURL:String,phoneNumber:[Int],fbProfileURL:String,city:String) {
+    init(firstName:String,lastName:String,profileImageURL:String,phoneNumber:[String],fbProfileURL:String,city:String) {
         self.firstName = firstName
         self.lastName = lastName
         self.profileImageURL = profileImageURL

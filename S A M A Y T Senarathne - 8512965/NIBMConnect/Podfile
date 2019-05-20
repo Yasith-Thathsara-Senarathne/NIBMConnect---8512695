@@ -15,7 +15,7 @@ target 'NIBMConnect' do
     pod 'IQKeyboardManagerSwift', '5.0.0'
     pod 'Firebase/Analytics'
     pod 'Firebase/Database'
-    pod 'Kingfisher', '~> 5.0'
+    pod 'Kingfisher', '4.0'
 
   target 'NIBMConnectTests' do
     inherit! :search_paths
