@@ -12,6 +12,7 @@
 		EECD3AEB81E013A4C83B25D8 /* Pods_NIBMConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539CBA41A285F31F133AED7A /* Pods_NIBMConnectTests.framework */; };
 		F40A81E2228FEC1E007EE575 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A81E1228FEC1E007EE575 /* SignUpViewController.swift */; };
 		F40A81E422904C6F007EE575 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A81E322904C6F007EE575 /* Home.storyboard */; };
+		F427EB782293373D000577C6 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F427EB772293373D000577C6 /* FriendDetailViewController.swift */; };
 		F46B95F122913D4000A5937F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F022913D4000A5937F /* TabBarViewController.swift */; };
 		F46B95F322913DD900A5937F /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F222913DD900A5937F /* MyProfileViewController.swift */; };
 		F46B95F522913E4800A5937F /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F422913E4800A5937F /* HomeworkViewController.swift */; };
@@ -60,6 +61,7 @@
 		D6815E2CE62E9FCD644023FA /* Pods-NIBMConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnectUITests/Pods-NIBMConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F40A81E1228FEC1E007EE575 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F40A81E322904C6F007EE575 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F427EB772293373D000577C6 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		F46B95F022913D4000A5937F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F46B95F222913DD900A5937F /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		F46B95F422913E4800A5937F /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				F46B95F422913E4800A5937F /* HomeworkViewController.swift */,
 				F46B95F62291608800A5937F /* FriendTableViewCell.swift */,
 				F46B95FC2292B1AF00A5937F /* FogetPasswordViewController.swift */,
+				F427EB772293373D000577C6 /* FriendDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */,
 				F46B95F522913E4800A5937F /* HomeworkViewController.swift in Sources */,
 				F46B95FB22917C9900A5937F /* AppData.swift in Sources */,
+				F427EB782293373D000577C6 /* FriendDetailViewController.swift in Sources */,
 				F46B95FD2292B1AF00A5937F /* FogetPasswordViewController.swift in Sources */,
 				F46B95F322913DD900A5937F /* MyProfileViewController.swift in Sources */,
 				F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */,

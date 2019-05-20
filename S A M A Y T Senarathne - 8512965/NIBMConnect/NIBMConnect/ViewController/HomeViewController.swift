@@ -46,7 +46,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        //tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showFriendDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? FriendDetailViewController{
+            destination.selectedFriend = self.friends[(tableView.indexPathForSelectedRow?.row)!]
+        }
     }
     
     @IBAction func logoutBtn(_ sender: UIButton) {

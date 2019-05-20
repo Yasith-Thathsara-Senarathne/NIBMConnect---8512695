@@ -18,20 +18,6 @@ class FriendTableViewCell: UITableViewCell {
     
     
     func setFriends(friend : Friend){
-//        let url = URL(string: friend.profileImageURL)
-//        let processor = DownsamplingImageProcessor(size: profileImage.size)
-//            >> RoundCornerImageProcessor(cornerRadius: 20)
-//        profileImage.kf.indicatorType = .activity
-//        profileImage.kf.setImage(
-//            with: url,
-//            placeholder: UIImage(named: "placeholderImage"),
-//            options: [
-//                .processor(processor),
-//                .scaleFactor(UIScreen.main.scale),
-//                .transition(.fade(1)),
-//                .cacheOriginalImage
-//            ])
-        
         let url = URL(string:friend.profileImageURL)
         profileImage.kf.indicatorType = .activity
         let processor = RoundCornerImageProcessor(cornerRadius: 20)
