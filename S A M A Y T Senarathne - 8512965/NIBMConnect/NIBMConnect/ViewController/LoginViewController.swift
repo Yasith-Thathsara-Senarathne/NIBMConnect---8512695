@@ -12,6 +12,7 @@ import Firebase
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTxt: UITextField!
+    
     @IBOutlet weak var passwordTxt: UITextField!
     
     @IBOutlet weak var loadingView: UIView!
@@ -26,13 +27,13 @@ class LoginViewController: UIViewController {
         
         self.loadingView.alpha = CGFloat(1.0)
         if (emailTxt.text?.isEmpty)!{
-            self.populateAlertBox(title: "Empty Fields !", message: "Enter Email")
             self.loadingView.alpha = CGFloat(0.0)
+            self.populateAlertBox(title: "Empty Fields !", message: "Enter Email")
             return
         }
         else if (passwordTxt.text?.isEmpty)!{
-            self.populateAlertBox(title: "Empty Fields !", message: "Enter Password")
             self.loadingView.alpha = CGFloat(0.0)
+            self.populateAlertBox(title: "Empty Fields !", message: "Enter Password")
             return
         }
         else{
@@ -42,7 +43,7 @@ class LoginViewController: UIViewController {
                 if error != nil {
                     let alert = UIAlertController(title: "Login Error", message: error?.localizedDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                    strongSelf.loadingView.alpha = CGFloat(0.0)
+                    self?.loadingView.alpha = CGFloat(0.0)
                     strongSelf.present(alert, animated: true, completion: nil)
                 } else {
                     strongSelf.dismiss(animated: true, completion: nil)
@@ -73,5 +74,31 @@ class LoginViewController: UIViewController {
         let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         self.present(alert, animated: true)
+    }
+}
+
+var vSpinner : UIView?
+
+extension UIViewController {
+    func showSpinner(onView : UIView) {
+        let spinnerView = UIView.init(frame: onView.bounds)
+        spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        let ai = UIActivityIndicatorView.init()
+        ai.startAnimating()
+        ai.center = spinnerView.center
+        
+        DispatchQueue.main.async {
+            spinnerView.addSubview(ai)
+            onView.addSubview(spinnerView)
+        }
+        
+        vSpinner = spinnerView
+    }
+    
+    func removeSpinner() {
+        DispatchQueue.main.async {
+            vSpinner?.removeFromSuperview()
+            vSpinner = nil
+        }
     }
 }

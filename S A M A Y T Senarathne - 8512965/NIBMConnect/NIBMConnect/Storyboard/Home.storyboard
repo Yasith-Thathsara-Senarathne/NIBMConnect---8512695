@@ -91,6 +91,9 @@
                                         <state key="normal" title="Logout">
                                             <color key="titleColor" red="0.2451627267" green="0.2451627267" blue="0.2451627267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logoutBtn:" destination="fFj-2D-vjR" eventType="touchUpInside" id="HkN-th-Yux"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.61245253180000003" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

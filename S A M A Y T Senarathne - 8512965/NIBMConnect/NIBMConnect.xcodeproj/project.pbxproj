@@ -18,6 +18,7 @@
 		F46B95F72291608800A5937F /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F62291608800A5937F /* FriendTableViewCell.swift */; };
 		F46B95F9229162F200A5937F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95F8229162F200A5937F /* Friend.swift */; };
 		F46B95FB22917C9900A5937F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95FA22917C9900A5937F /* AppData.swift */; };
+		F46B95FD2292B1AF00A5937F /* FogetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95FC2292B1AF00A5937F /* FogetPasswordViewController.swift */; };
 		F475A990228F407800CD7462 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475A98F228F407800CD7462 /* HomeViewController.swift */; };
 		F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D204228E3B9500F7655F /* AppDelegate.swift */; };
 		F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D206228E3B9500F7655F /* ViewController.swift */; };
@@ -65,6 +66,7 @@
 		F46B95F62291608800A5937F /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		F46B95F8229162F200A5937F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		F46B95FA22917C9900A5937F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		F46B95FC2292B1AF00A5937F /* FogetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogetPasswordViewController.swift; sourceTree = "<group>"; };
 		F475A98F228F407800CD7462 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4B6D201228E3B9500F7655F /* NIBMConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B6D204228E3B9500F7655F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				F46B95F222913DD900A5937F /* MyProfileViewController.swift */,
 				F46B95F422913E4800A5937F /* HomeworkViewController.swift */,
 				F46B95F62291608800A5937F /* FriendTableViewCell.swift */,
+				F46B95FC2292B1AF00A5937F /* FogetPasswordViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */,
 				F46B95F522913E4800A5937F /* HomeworkViewController.swift in Sources */,
 				F46B95FB22917C9900A5937F /* AppData.swift in Sources */,
+				F46B95FD2292B1AF00A5937F /* FogetPasswordViewController.swift in Sources */,
 				F46B95F322913DD900A5937F /* MyProfileViewController.swift in Sources */,
 				F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */,
 				F475A990228F407800CD7462 /* HomeViewController.swift in Sources */,

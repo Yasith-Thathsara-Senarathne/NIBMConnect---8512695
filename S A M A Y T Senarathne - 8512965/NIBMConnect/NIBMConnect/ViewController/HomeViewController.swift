@@ -45,6 +45,36 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    @IBAction func logoutBtn(_ sender: UIButton) {
+        
+        let val = self.signOut()
+        if !val{
+            
+        }
+        else{
+            //Open next UI
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "Main") as! LoginViewController
+            self.present(controller, animated: true, completion: nil)
+            //End
+        }
+    }
+    
+    //Signout user function
+    func signOut() -> Bool{
+        do{
+            try Auth.auth().signOut()
+            return true
+        }catch{
+            return false
+        }
+    }
+    
+    
     //Load data from firebase
     func loadFriendsData(){
 //        var tempFriendList: [Friend] = []
