@@ -27,6 +27,9 @@ class FriendDetailViewController: UIViewController {
         self.loadData()
 
     }
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     //LoadData to controllers
     func loadData(){

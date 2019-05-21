@@ -28,6 +28,7 @@
 		F4B6D20F228E3BCD00F7655F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B6D20D228E3BCD00F7655F /* LaunchScreen.storyboard */; };
 		F4B6D21A228E3BCE00F7655F /* NIBMConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D219228E3BCE00F7655F /* NIBMConnectTests.swift */; };
 		F4B6D225228E3BCE00F7655F /* NIBMConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D224228E3BCE00F7655F /* NIBMConnectUITests.swift */; };
+		F4DD3F8D2294A2A100476AB4 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD3F8C2294A2A100476AB4 /* NewNoteViewController.swift */; };
 		F4F40F21228EB6210074FB67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4F40F20228EB6200074FB67 /* GoogleService-Info.plist */; };
 		F4F40F23228EF2D00074FB67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F40F22228EF2D00074FB67 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		F4B6D220228E3BCE00F7655F /* NIBMConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIBMConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B6D224228E3BCE00F7655F /* NIBMConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBMConnectUITests.swift; sourceTree = "<group>"; };
 		F4B6D226228E3BCE00F7655F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DD3F8C2294A2A100476AB4 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 		F4F40F20228EB6200074FB67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4F40F22228EF2D00074FB67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 				F46B95F62291608800A5937F /* FriendTableViewCell.swift */,
 				F46B95FC2292B1AF00A5937F /* FogetPasswordViewController.swift */,
 				F427EB772293373D000577C6 /* FriendDetailViewController.swift */,
+				F4DD3F8C2294A2A100476AB4 /* NewNoteViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				F46B95FD2292B1AF00A5937F /* FogetPasswordViewController.swift in Sources */,
 				F46B95F322913DD900A5937F /* MyProfileViewController.swift in Sources */,
 				F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */,
+				F4DD3F8D2294A2A100476AB4 /* NewNoteViewController.swift in Sources */,
 				F475A990228F407800CD7462 /* HomeViewController.swift in Sources */,
 				F46B95F9229162F200A5937F /* Friend.swift in Sources */,
 				F46B95F122913D4000A5937F /* TabBarViewController.swift in Sources */,
