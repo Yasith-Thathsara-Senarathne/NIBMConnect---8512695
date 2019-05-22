@@ -12,7 +12,6 @@ import Kingfisher
 class FriendTableViewCell: UITableViewCell {
     
     @IBOutlet weak var profileImage: UIImageView!
-    
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var profileCityName: UILabel!
     

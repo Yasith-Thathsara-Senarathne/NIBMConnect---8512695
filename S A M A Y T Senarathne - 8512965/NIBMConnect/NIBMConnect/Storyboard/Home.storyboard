@@ -52,9 +52,48 @@
                                     <constraint firstItem="inc-VO-MMc" firstAttribute="centerY" secondItem="wcs-C3-gfm" secondAttribute="centerY" id="gCl-XO-nb2"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PSi-ma-W9s">
+                                <rect key="frame" x="0.0" y="90" width="375" height="528"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteListCell" rowHeight="75" id="ODV-48-1vh" customClass="NoteTableViewCell" customModule="NIBMConnect" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ODV-48-1vh" id="Kv1-lm-C0g">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bef-B8-FpZ">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="75"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bef-B8-FpZ" firstAttribute="leading" secondItem="Kv1-lm-C0g" secondAttribute="leadingMargin" id="JXV-eM-Dcj"/>
+                                                <constraint firstItem="bef-B8-FpZ" firstAttribute="bottom" secondItem="Kv1-lm-C0g" secondAttribute="bottomMargin" constant="11" id="OFm-uW-cQx"/>
+                                                <constraint firstItem="bef-B8-FpZ" firstAttribute="top" secondItem="Kv1-lm-C0g" secondAttribute="top" id="eJY-9t-vDy"/>
+                                                <constraint firstItem="bef-B8-FpZ" firstAttribute="centerX" secondItem="Kv1-lm-C0g" secondAttribute="centerX" id="tNc-4A-ST1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="noteTxt" destination="bef-B8-FpZ" id="JH5-aO-yO8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EqX-BO-MYx" id="XTf-v2-rAY"/>
+                                    <outlet property="delegate" destination="EqX-BO-MYx" id="G2g-G1-ro8"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="gLt-ic-E6c" firstAttribute="trailing" secondItem="PSi-ma-W9s" secondAttribute="trailing" id="CvZ-6Y-QOz"/>
+                            <constraint firstItem="PSi-ma-W9s" firstAttribute="top" secondItem="wcs-C3-gfm" secondAttribute="bottom" id="NKC-YJ-Ryh"/>
+                            <constraint firstItem="gLt-ic-E6c" firstAttribute="bottom" secondItem="PSi-ma-W9s" secondAttribute="bottom" id="Uf9-di-BT9"/>
+                            <constraint firstItem="PSi-ma-W9s" firstAttribute="leading" secondItem="gLt-ic-E6c" secondAttribute="leading" id="WaJ-2F-LlD"/>
                             <constraint firstItem="wcs-C3-gfm" firstAttribute="top" secondItem="gLt-ic-E6c" secondAttribute="top" id="YNK-sb-QbZ"/>
                             <constraint firstItem="wcs-C3-gfm" firstAttribute="leading" secondItem="hvc-W5-DZn" secondAttribute="leading" id="i2x-C9-CYe"/>
                             <constraint firstAttribute="trailing" secondItem="wcs-C3-gfm" secondAttribute="trailing" id="i5d-fT-Ob7"/>
@@ -63,6 +102,9 @@
                         <viewLayoutGuide key="safeArea" id="gLt-ic-E6c"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Homework" image="note" id="SeI-5X-kUd"/>
+                    <connections>
+                        <outlet property="tableView" destination="PSi-ma-W9s" id="Ajm-Zt-Ms8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uai-hN-JPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,9 +150,36 @@
                                     <constraint firstItem="tsb-92-6t7" firstAttribute="leading" secondItem="Y4O-w0-y2C" secondAttribute="leadingMargin" constant="113" id="new-QV-bY6"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikl-Pf-SUX">
+                                <rect key="frame" x="16" y="115" width="343" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgF-7i-Epb">
+                                <rect key="frame" x="16" y="359" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.61245253180000003" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6M5-Yy-nUT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveNewNoteBtn:" destination="WXa-OQ-zkG" eventType="touchUpInside" id="m2W-Ig-SGU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="IgF-7i-Epb" firstAttribute="top" secondItem="Ikl-Pf-SUX" secondAttribute="bottom" constant="24" id="6XM-iO-ST8"/>
+                            <constraint firstItem="Ikl-Pf-SUX" firstAttribute="leading" secondItem="khP-pI-dk5" secondAttribute="leadingMargin" id="CBl-Hx-gfw"/>
+                            <constraint firstItem="pJI-fk-362" firstAttribute="bottom" secondItem="Ikl-Pf-SUX" secondAttribute="bottom" constant="332" id="ENh-bg-tK6"/>
+                            <constraint firstItem="IgF-7i-Epb" firstAttribute="trailing" secondItem="Ikl-Pf-SUX" secondAttribute="trailing" id="IUt-Fg-fJQ"/>
+                            <constraint firstItem="IgF-7i-Epb" firstAttribute="leading" secondItem="Ikl-Pf-SUX" secondAttribute="leading" id="IYl-UT-U5g"/>
+                            <constraint firstItem="Ikl-Pf-SUX" firstAttribute="top" secondItem="Y4O-w0-y2C" secondAttribute="bottom" constant="25" id="LGW-8M-2P8"/>
+                            <constraint firstItem="Ikl-Pf-SUX" firstAttribute="centerX" secondItem="Y4O-w0-y2C" secondAttribute="centerX" id="RNu-8M-Hco"/>
                             <constraint firstItem="Y4O-w0-y2C" firstAttribute="top" secondItem="pJI-fk-362" secondAttribute="top" id="hY3-NF-ATw"/>
                             <constraint firstItem="Y4O-w0-y2C" firstAttribute="leading" secondItem="khP-pI-dk5" secondAttribute="leading" id="iey-ve-uIT"/>
                             <constraint firstAttribute="trailing" secondItem="Y4O-w0-y2C" secondAttribute="trailing" id="piM-9f-thq"/>
@@ -119,10 +188,13 @@
                         <viewLayoutGuide key="safeArea" id="pJI-fk-362"/>
                     </view>
                     <navigationItem key="navigationItem" id="GFB-qz-bnm"/>
+                    <connections>
+                        <outlet property="newNoteTxt" destination="Ikl-Pf-SUX" id="ELM-dh-oa4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j1-7n-zSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="527" y="206"/>
+            <point key="canvasLocation" x="525.60000000000002" y="205.54722638680661"/>
         </scene>
         <!--Friend Detail View Controller-->
         <scene sceneID="NG9-mf-Mag">

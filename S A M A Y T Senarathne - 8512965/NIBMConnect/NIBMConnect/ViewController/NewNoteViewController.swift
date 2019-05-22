@@ -10,16 +10,30 @@ import UIKit
 
 class NewNoteViewController: UIViewController {
     
+    @IBOutlet weak var newNoteTxt: UITextView!
+    var noteList:[String] = []
+    
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        newNoteTxt.placeholderText = "Type..."
+        noteList = defaults.object(forKey: "savedNotes") as? [String] ?? [String]()
     }
+    
     
     @IBAction func backBtn(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
     
+    @IBAction func saveNewNoteBtn(_ sender: UIButton) {
+        
+        noteList.append(newNoteTxt.text)
+        defaults.set(self.noteList, forKey: "savedNotes")
+        print(self.noteList)
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
