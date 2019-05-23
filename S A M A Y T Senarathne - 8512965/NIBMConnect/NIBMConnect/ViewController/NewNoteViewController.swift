@@ -32,7 +32,6 @@ class NewNoteViewController: UIViewController {
         
         noteList.append(newNoteTxt.text)
         defaults.set(self.noteList, forKey: "savedNotes")
-        print(self.noteList)
         self.dismiss(animated: true, completion: nil)
     }
     

@@ -10,9 +10,9 @@ import UIKit
 
 class HomeworkViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var noteList:[String] = []
     @IBOutlet weak var tableView: UITableView!
     
+    var noteList:[String] = []
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -38,14 +38,12 @@ class HomeworkViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(noteList[0])
         return self.noteList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var note:String = ""
         note = self.noteList[indexPath.row]
-        print("note",self.noteList[indexPath.row])
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "noteListCell" ,for: indexPath) as! NoteTableViewCell
 

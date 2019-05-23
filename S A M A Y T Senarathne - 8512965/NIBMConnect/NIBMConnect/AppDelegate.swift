@@ -15,6 +15,10 @@ import IQKeyboardManagerSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var tabBarController : UITabBarController?
+    var homeVC = HomeViewController()
+    var homeWorkVC = HomeworkViewController()
+    var myProfileVC = MyProfileViewController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -22,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         IQKeyboardManager.sharedManager().enable = true
+        tabBarController?.setViewControllers([homeVC,homeWorkVC,myProfileVC], animated: true)
+        tabBarController?.selectedIndex = 0
         return true
     }
     

@@ -60,14 +60,6 @@ class FogetPasswordViewController: UIViewController {
                     } else {
                         self.loadingView.alpha = CGFloat(0.0)
                         self.populateAlertBox(title: "Reset Email Sent Successfully", message: "Check your email")
-                        let alert = UIAlertController(title: "Reset Email Sent Successfully", message:"Check your email", preferredStyle: .alert)
-//                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler:nil))
-                        
-                        UIView.animate(withDuration: 0.5, animations: {() -> Void in
-                            self.present(alert, animated: true)
-                        }, completion: {(_ finished: Bool) -> Void in
-                            self.passwordRestDone()
-                        })
                     }
                 }
             })
@@ -85,7 +77,8 @@ class FogetPasswordViewController: UIViewController {
         
         //Popup alert
         let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: {action in self.passwordRestDone()})
+        alert.addAction(action)
         self.present(alert, animated: true)
     }
 }
