@@ -25,12 +25,16 @@ class MyProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.unAuthorizedView.alpha = 1
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.unAuthorizedView.alpha = 1
-        loadUserData()
         authenticationFingerPrint()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.unAuthorizedView.alpha = 1
     }
     
     //Load data from firebase
@@ -77,6 +81,7 @@ class MyProfileViewController: UIViewController {
                 if success{
                     print("Authentication Success")
                     DispatchQueue.main.async{
+                        self.loadUserData()
                         self.unAuthorizedView.alpha = 0
                     }
                 }

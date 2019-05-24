@@ -36,11 +36,6 @@ class FogetPasswordViewController: UIViewController {
             self.populateAlertBox(title: "Empty Fields !", message: "Enter Email")
             return
         }
-//        else if (newPasswordTxt.text?.isEmpty)!{
-//            self.loadingView.alpha = CGFloat(0.0)
-//            self.populateAlertBox(title: "Empty Fields !", message: "Enter New Password")
-//            return
-//        }
         else if (currentUser?.email != emailTxt.text){
             self.loadingView.alpha = CGFloat(0.0)
             self.populateAlertBox(title: "Mismatch", message: "Email Does Not Match")
@@ -59,7 +54,7 @@ class FogetPasswordViewController: UIViewController {
                         return
                     } else {
                         self.loadingView.alpha = CGFloat(0.0)
-                        self.populateAlertBox(title: "Reset Email Sent Successfully", message: "Check your email")
+                        self.populateSuccessAlertBox(title: "Reset Email Sent Successfully", message: "Check your email")
                     }
                 }
             })
@@ -74,6 +69,16 @@ class FogetPasswordViewController: UIViewController {
     
     //Populate alter function
     func populateAlertBox(title:String,message:String){
+        
+        //Popup alert
+        let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true)
+    }
+    
+    //Populate success alter function
+    func populateSuccessAlertBox(title:String,message:String){
         
         //Popup alert
         let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
