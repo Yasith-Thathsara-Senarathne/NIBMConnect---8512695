@@ -62,6 +62,8 @@ class MyProfileViewController: UIViewController {
                 self.ageTxt.text = age.description
                 self.phoneNumberTxt.text = phonenumber
                 self.birthDateTxt.text = birthdate
+                
+                self.roundUpImage()
             }
             else{
                 print("No values")
@@ -109,5 +111,15 @@ class MyProfileViewController: UIViewController {
     //Error show function
     func showError(){
         self.unAuthorizedView.alpha = 1
+    }
+    
+    //Roundup image
+    func roundUpImage() {
+        
+        profileImage.layer.borderWidth = 1
+        profileImage.layer.masksToBounds = false
+        profileImage.layer.cornerRadius = 3
+        //This will change with corners of image and height/2 will make this circle shape
+        profileImage.clipsToBounds = true
     }
 }

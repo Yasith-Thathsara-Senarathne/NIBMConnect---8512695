@@ -23,9 +23,16 @@ class FriendTableViewCell: UITableViewCell {
         profileImage.kf.setImage(with: url , options:[.processor(processor)])
         profileName.text = "\(friend.firstName) \(friend.lastName)"
         profileCityName.text = friend.city
+        self.roundUpImage()
     }
     
-    func setImage(){
+    //Roundup image
+    func roundUpImage() {
         
+        profileImage.layer.borderWidth = 1
+        profileImage.layer.masksToBounds = false
+        profileImage.layer.cornerRadius = 3
+        //This will change with corners of image and height/2 will make this circle shape
+        profileImage.clipsToBounds = true
     }
 }

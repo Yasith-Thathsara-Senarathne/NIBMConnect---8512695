@@ -58,29 +58,30 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func logoutBtn(_ sender: UIButton) {
         
-        let val = self.signOut()
-        if !val{
-            
-        }
-        else{
-            //Open next UI
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "Main") as! LoginViewController
-            self.present(controller, animated: true, completion: nil)
-            //End
-        }
+        self.populateAlertBox(title: "Logout", message: "You Want To Logout From the System ?")
     }
     
     //Signout user function
     func signOut() -> Bool{
         do{
             try Auth.auth().signOut()
+            self.dismiss(animated: true, completion: nil)
             return true
         }catch{
             return false
         }
     }
     
+    
+    //Populate alter function
+    func populateAlertBox(title:String,message:String){
+        
+        //Popup alert
+        let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler:{action in self.signOut()})
+        alert.addAction(action)
+        self.present(alert, animated: true)
+    }
     
     //Load data from firebase
     func loadFriendsData(){

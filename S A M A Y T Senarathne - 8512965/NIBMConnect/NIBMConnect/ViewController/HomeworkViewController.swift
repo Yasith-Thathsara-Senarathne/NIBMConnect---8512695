@@ -51,4 +51,12 @@ class HomeworkViewController: UIViewController, UITableViewDelegate, UITableView
         cell.setNotes(note: note)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            self.noteList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .bottom)
+            self.defaults.set(self.noteList, forKey: "savedNotes")
+        }
+    }
 }
