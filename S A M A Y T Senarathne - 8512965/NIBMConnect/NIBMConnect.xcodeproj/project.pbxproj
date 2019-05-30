@@ -21,6 +21,26 @@
 		F46B95FB22917C9900A5937F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95FA22917C9900A5937F /* AppData.swift */; };
 		F46B95FD2292B1AF00A5937F /* FogetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B95FC2292B1AF00A5937F /* FogetPasswordViewController.swift */; };
 		F475A990228F407800CD7462 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475A98F228F407800CD7462 /* HomeViewController.swift */; };
+		F48913CD229BBB290016AF54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913B4229BBB240016AF54 /* AppDelegate.swift */; };
+		F48913CE229BBB2A0016AF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48913B5229BBB250016AF54 /* Assets.xcassets */; };
+		F48913CF229BBB2A0016AF54 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F48913B6229BBB250016AF54 /* Info.plist */; };
+		F48913D0229BBB2A0016AF54 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913B8229BBB250016AF54 /* AppData.swift */; };
+		F48913D1229BBB2A0016AF54 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913B9229BBB250016AF54 /* Friend.swift */; };
+		F48913D2229BBB2A0016AF54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48913BB229BBB250016AF54 /* LaunchScreen.storyboard */; };
+		F48913D3229BBB2A0016AF54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48913BD229BBB250016AF54 /* Main.storyboard */; };
+		F48913D4229BBB2A0016AF54 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48913BF229BBB250016AF54 /* Home.storyboard */; };
+		F48913D5229BBB2A0016AF54 /* FogetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C1229BBB250016AF54 /* FogetPasswordViewController.swift */; };
+		F48913D6229BBB2A0016AF54 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C2229BBB250016AF54 /* FriendDetailViewController.swift */; };
+		F48913D7229BBB2A0016AF54 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C3229BBB250016AF54 /* FriendTableViewCell.swift */; };
+		F48913D8229BBB2A0016AF54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C4229BBB250016AF54 /* HomeViewController.swift */; };
+		F48913D9229BBB2A0016AF54 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C5229BBB250016AF54 /* HomeworkViewController.swift */; };
+		F48913DA229BBB2A0016AF54 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C6229BBB250016AF54 /* LoginViewController.swift */; };
+		F48913DB229BBB2A0016AF54 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C7229BBB250016AF54 /* MyProfileViewController.swift */; };
+		F48913DC229BBB2A0016AF54 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C8229BBB250016AF54 /* NewNoteViewController.swift */; };
+		F48913DD229BBB2A0016AF54 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913C9229BBB250016AF54 /* NoteTableViewCell.swift */; };
+		F48913DE229BBB2A0016AF54 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913CA229BBB250016AF54 /* SignUpViewController.swift */; };
+		F48913DF229BBB2A0016AF54 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913CB229BBB250016AF54 /* TabBarViewController.swift */; };
+		F48913E0229BBB2A0016AF54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48913CC229BBB250016AF54 /* ViewController.swift */; };
 		F4A9C31F2295850400205F3A /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A9C31E2295850400205F3A /* NoteTableViewCell.swift */; };
 		F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D204228E3B9500F7655F /* AppDelegate.swift */; };
 		F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6D206228E3B9500F7655F /* ViewController.swift */; };
@@ -72,6 +92,26 @@
 		F46B95FA22917C9900A5937F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		F46B95FC2292B1AF00A5937F /* FogetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogetPasswordViewController.swift; sourceTree = "<group>"; };
 		F475A98F228F407800CD7462 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F48913B4229BBB240016AF54 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F48913B5229BBB250016AF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F48913B6229BBB250016AF54 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48913B8229BBB250016AF54 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		F48913B9229BBB250016AF54 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		F48913BC229BBB250016AF54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F48913BE229BBB250016AF54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F48913BF229BBB250016AF54 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F48913C1229BBB250016AF54 /* FogetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FogetPasswordViewController.swift; sourceTree = "<group>"; };
+		F48913C2229BBB250016AF54 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		F48913C3229BBB250016AF54 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		F48913C4229BBB250016AF54 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F48913C5229BBB250016AF54 /* HomeworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
+		F48913C6229BBB250016AF54 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F48913C7229BBB250016AF54 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		F48913C8229BBB250016AF54 /* NewNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		F48913C9229BBB250016AF54 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		F48913CA229BBB250016AF54 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F48913CB229BBB250016AF54 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F48913CC229BBB250016AF54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4A9C31E2295850400205F3A /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		F4B6D201228E3B9500F7655F /* NIBMConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B6D204228E3B9500F7655F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +182,57 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F48913B3229BBB240016AF54 /* NIBMConnect */ = {
+			isa = PBXGroup;
+			children = (
+				F48913B4229BBB240016AF54 /* AppDelegate.swift */,
+				F48913B5229BBB250016AF54 /* Assets.xcassets */,
+				F48913B6229BBB250016AF54 /* Info.plist */,
+				F48913B7229BBB250016AF54 /* Model */,
+				F48913BA229BBB250016AF54 /* Storyboard */,
+				F48913C0229BBB250016AF54 /* ViewController */,
+			);
+			name = NIBMConnect;
+			sourceTree = "<group>";
+		};
+		F48913B7229BBB250016AF54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F48913B8229BBB250016AF54 /* AppData.swift */,
+				F48913B9229BBB250016AF54 /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F48913BA229BBB250016AF54 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F48913BB229BBB250016AF54 /* LaunchScreen.storyboard */,
+				F48913BD229BBB250016AF54 /* Main.storyboard */,
+				F48913BF229BBB250016AF54 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F48913C0229BBB250016AF54 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F48913C1229BBB250016AF54 /* FogetPasswordViewController.swift */,
+				F48913C2229BBB250016AF54 /* FriendDetailViewController.swift */,
+				F48913C3229BBB250016AF54 /* FriendTableViewCell.swift */,
+				F48913C4229BBB250016AF54 /* HomeViewController.swift */,
+				F48913C5229BBB250016AF54 /* HomeworkViewController.swift */,
+				F48913C6229BBB250016AF54 /* LoginViewController.swift */,
+				F48913C7229BBB250016AF54 /* MyProfileViewController.swift */,
+				F48913C8229BBB250016AF54 /* NewNoteViewController.swift */,
+				F48913C9229BBB250016AF54 /* NoteTableViewCell.swift */,
+				F48913CA229BBB250016AF54 /* SignUpViewController.swift */,
+				F48913CB229BBB250016AF54 /* TabBarViewController.swift */,
+				F48913CC229BBB250016AF54 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		F4B6D1F8228E3B9500F7655F = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F40F20228EB6200074FB67 /* GoogleService-Info.plist */,
+				F48913B3229BBB240016AF54 /* NIBMConnect */,
 				F4F40F1F228EAFAA0074FB67 /* Storyboard */,
 				F4F40F1E228EAF9B0074FB67 /* ViewController */,
 				F4F40F1D228EAF610074FB67 /* Model */,
@@ -344,10 +436,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B6D20F228E3BCD00F7655F /* LaunchScreen.storyboard in Resources */,
+				F48913D4229BBB2A0016AF54 /* Home.storyboard in Resources */,
+				F48913D2229BBB2A0016AF54 /* LaunchScreen.storyboard in Resources */,
 				F40A81E422904C6F007EE575 /* Home.storyboard in Resources */,
 				F4F40F21228EB6210074FB67 /* GoogleService-Info.plist in Resources */,
 				F4B6D20C228E3BCD00F7655F /* Assets.xcassets in Resources */,
+				F48913CE229BBB2A0016AF54 /* Assets.xcassets in Resources */,
+				F48913D3229BBB2A0016AF54 /* Main.storyboard in Resources */,
 				F4B6D20A228E3B9500F7655F /* Main.storyboard in Resources */,
+				F48913CF229BBB2A0016AF54 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,20 +578,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48913E0229BBB2A0016AF54 /* ViewController.swift in Sources */,
+				F48913D9229BBB2A0016AF54 /* HomeworkViewController.swift in Sources */,
 				F46B95F72291608800A5937F /* FriendTableViewCell.swift in Sources */,
 				F4F40F23228EF2D00074FB67 /* LoginViewController.swift in Sources */,
+				F48913DC229BBB2A0016AF54 /* NewNoteViewController.swift in Sources */,
 				F4B6D207228E3B9500F7655F /* ViewController.swift in Sources */,
 				F46B95F522913E4800A5937F /* HomeworkViewController.swift in Sources */,
 				F46B95FB22917C9900A5937F /* AppData.swift in Sources */,
 				F427EB782293373D000577C6 /* FriendDetailViewController.swift in Sources */,
+				F48913D7229BBB2A0016AF54 /* FriendTableViewCell.swift in Sources */,
+				F48913D8229BBB2A0016AF54 /* HomeViewController.swift in Sources */,
 				F46B95FD2292B1AF00A5937F /* FogetPasswordViewController.swift in Sources */,
 				F46B95F322913DD900A5937F /* MyProfileViewController.swift in Sources */,
+				F48913CD229BBB290016AF54 /* AppDelegate.swift in Sources */,
+				F48913DA229BBB2A0016AF54 /* LoginViewController.swift in Sources */,
+				F48913DD229BBB2A0016AF54 /* NoteTableViewCell.swift in Sources */,
+				F48913D5229BBB2A0016AF54 /* FogetPasswordViewController.swift in Sources */,
 				F4A9C31F2295850400205F3A /* NoteTableViewCell.swift in Sources */,
+				F48913DB229BBB2A0016AF54 /* MyProfileViewController.swift in Sources */,
+				F48913DF229BBB2A0016AF54 /* TabBarViewController.swift in Sources */,
 				F4B6D205228E3B9500F7655F /* AppDelegate.swift in Sources */,
 				F4DD3F8D2294A2A100476AB4 /* NewNoteViewController.swift in Sources */,
 				F475A990228F407800CD7462 /* HomeViewController.swift in Sources */,
+				F48913D0229BBB2A0016AF54 /* AppData.swift in Sources */,
+				F48913DE229BBB2A0016AF54 /* SignUpViewController.swift in Sources */,
 				F46B95F9229162F200A5937F /* Friend.swift in Sources */,
+				F48913D1229BBB2A0016AF54 /* Friend.swift in Sources */,
 				F46B95F122913D4000A5937F /* TabBarViewController.swift in Sources */,
+				F48913D6229BBB2A0016AF54 /* FriendDetailViewController.swift in Sources */,
 				F40A81E2228FEC1E007EE575 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +643,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F48913BB229BBB250016AF54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48913BC229BBB250016AF54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F48913BD229BBB250016AF54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F48913BE229BBB250016AF54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		F4B6D208228E3B9500F7655F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
